@@ -23,7 +23,6 @@ let package = Package(
       name: "ReaderSDKWrapper",
       dependencies: [
         .product(name: "RealmSwift", package: "realm-swift"),
-        .product(name: "Realm", package: "realm-swift"),
         "SnapKit",
         "Zip",
         .product(name: "RxRelay", package: "RxSwift"),
@@ -37,7 +36,7 @@ let package = Package(
     ),
     .binaryTarget(
       name: "ReaderSDK",
-      url: "https://bitbucket.org/ziniollc/ios-reader-demo/src/develop/ReaderSDK-2.42.0.xcframework.zip",
+      url: "https://github.com/rserentill/ios-reader-sdk/raw/main/ReaderSDK-2.42.0.xcframework.zip",
       checksum: "464297fab03c5e86e69e3ee99e59e93286e7261e0e0d2f38541c1067db772c74"
     )
   ]

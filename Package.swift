@@ -15,21 +15,19 @@ let package = Package(
     .package(url: "https://github.com/marmelroy/Zip", exact: "2.1.2"),
     .package(url: "https://github.com/ReactiveX/RxSwift", .upToNextMinor(from: "6.5.0")),
     .package(url: "https://github.com/kishikawakatsumi/KeychainAccess", .upToNextMinor(from: "4.2.2")),
-    .package(url: "https://github.com/onevcat/Kingfisher", .upToNextMinor(from: "5.14.0")),
-    .package(url: "https://github.com/suzuki-0000/SKPhotoBrowser", revision: "06ec43d4768cd04e488cd022b57bac1ffecb282f"),
+    .package(url: "https://github.com/onevcat/Kingfisher", .upToNextMinor(from: "5.14.0"))
   ],
   targets: [
     .target(
       name: "ReaderSDKWrapper",
       dependencies: [
+        .target(name: "ReaderSDK"),
         .product(name: "RealmSwift", package: "realm-swift"),
         "SnapKit",
         "Zip",
         .product(name: "RxRelay", package: "RxSwift"),
         "KeychainAccess",
-        "Kingfisher",
-        "SKPhotoBrowser",
-        .target(name: "ReaderSDK")
+        "Kingfisher"
       ],
       path: "Sources/ReaderSDKWrapper",
       publicHeadersPath: ""
@@ -37,7 +35,7 @@ let package = Package(
     .binaryTarget(
       name: "ReaderSDK",
       url: "https://github.com/rserentill/ios-reader-sdk/raw/main/ReaderSDK-2.42.0.xcframework.zip",
-      checksum: "464297fab03c5e86e69e3ee99e59e93286e7261e0e0d2f38541c1067db772c74"
+      checksum: "1ffef2cdf52a67682b097cddae5775d5b0a7cdb59dcf9c8aa75c1c10fdedc764"
     )
   ]
 )

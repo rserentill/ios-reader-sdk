@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   DESC
   
   s.homepage = 'http://www.zinio.com'
-  s.license = { type: 'Copyright', file: 'LICENSE' }
+  s.license = { type: 'Copyright', file: 'LICENSE.md' }
   s.author = 'Zinio LLC'
   
   s.platform = :ios, '12.0'
@@ -28,7 +28,6 @@ Pod::Spec.new do |s|
   # dependencies
   s.dependency 'Zip', '2.1.2'
   s.dependency 'RealmSwift', '10.28.0'
-  s.dependency 'SKPhotoBrowser', '7.0.0'
   s.dependency 'RxRelay', '~>5.1.0'
   s.dependency 'KeychainAccess', '~>4.1.0'
   s.dependency 'SnapKit', '5.6.0'

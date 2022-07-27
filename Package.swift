@@ -34,8 +34,8 @@ let package = Package(
     ),
     .binaryTarget(
       name: "ReaderSDK",
-      url: "https://github.com/rserentill/ios-reader-sdk/raw/main/ReaderSDK-2.42.1.xcframework.zip",
-      checksum: "a4722b976753c45950ae49d96c4291d66c51f959ffc7811f6e26ef2939e70e12"
+      url: "https://github.com/rserentill/ios-reader-sdk/raw/main/ReaderSDK-2.42.2.xcframework.zip",
+      checksum: "b74973c076fcd0224a9e9492c83783f4f4124ac65681c9eca1f10133f83e87bd"
     )
   ]
 )

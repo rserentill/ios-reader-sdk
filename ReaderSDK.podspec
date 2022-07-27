@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'ReaderSDK'
-  s.version = '2.42.0'
+  s.version = '2.42.2'
   s.summary = 'ReaderSDK is a propietary SDK for reading magazines in mobile platforms.'
   
   s.description  = <<-DESC
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.platform = :ios, '12.0'
   s.ios.deployment_target = '12.0'
 
-  s.source = { git: 'git@bitbucket.org:ziniollc/ios-reader-demo.git', tag: "v.#{s.version}" }
+  s.source = { git: 'git@bitbucket.org:ziniollc/ios-reader-demo.git', tag: "#{s.version}" }
   
   s.vendored_frameworks = 'ReaderSDK.xcframework'
   s.swift_version = '5.6'
